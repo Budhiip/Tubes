@@ -1,64 +1,115 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Pemrograman Intergratif-22
+**Budhi Priambodo  1202190065 || IT 02-01** 
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<br />
 
-## About Laravel
+-----
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### Tahap 1 
+### INSTALL COMPOSER
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+•	Downlaod Composer https://getcomposer.org/download/
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+   ![image](https://user-images.githubusercontent.com/83237598/173079242-fe7b1417-8b7f-4974-9fb5-bae272d419b9.png)
 
-## Learning Laravel
+•	Install file composer seperti biasa. Jika sudah buka terminal dan ketik “composer”, maka akan muncul tampilan seperti digambar, yang mana composer sudah terinstall.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+  ![](Assets/008.png)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### INSTALL LARAVEL VIA COMPOSER 
 
-## Laravel Sponsors
+•	Buka website https://laravel.com/docs/9.x#installation-via-composer, untuk menyalin command installasi laravel via composer
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+•	Buat folder baru di komputer untuk menginstall laravel (bebas lokasinya). Klik kanan dan buka dengan Git Bash Here
 
-### Premium Partners
+   ![image](https://user-images.githubusercontent.com/83237598/173079292-86228a98-5018-4aa8-8c48-0ab4c8e335c6.png)
+ 
+ •	Buat project untuk install laravel dengan command
+ 
+```
+ composer create-project laravel/laravel nama_project
+```
+•	Masuk  terlebih dahulu ke folder project yang sudah dibuat dengan command
+```
+cd aggregrate/
+```
+• Kemudian buka file installasi laravel dengan text editor (disini dengan visual studio code) dengan command 
+```
+code ./aggregrate
+```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+• Maka akan secara otomatis membuka aplikasi visual studio code
+•	Klik menu terminal pada bagian atas, pilih terminal baru, lalu masukkan command
+```
+php artisan serve
+```
+  ![Screenshot (141)](https://user-images.githubusercontent.com/61863147/175769877-05cabf1e-e2e3-4c7f-90b2-e07b2e32e35a.png)
 
-## Contributing
+•	Copy server laravel, untuk dibuka di browser
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+ ![Screenshot (117)](https://user-images.githubusercontent.com/61863147/175769820-93b5a568-9e43-479b-9ec1-57e223dc4f82.png)  
 
-## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
+<br />
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+-----
+### Tahap 2
+•	Ubah DB_DATABASE di .env sesuai dengan nama database yang dibuat di phpmyadmin
 
-## License
+![Screenshot (119)](https://user-images.githubusercontent.com/61863147/175769899-97ef4455-448f-454c-bf09-8b767c83bc25.png)
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+![Screenshot (120)](https://user-images.githubusercontent.com/61863147/175769914-5887ff49-d3e9-4172-a06e-b9552fd3a5d8.png)
+
+• Buat 2 table rss dan news dengan fitur migrations menggunakan perintah
+  ```
+  php artisan make:migration create_rss_table
+  
+  php artisan make:migration create_news_table
+  ```
+• Tambahkan kolom name dan url pada tabel rss, seperti pada gambar dibawah
+  ![Screenshot (122)](https://user-images.githubusercontent.com/61863147/175769940-4167e367-7059-4e96-a28e-904c113f5128.png)
+
+
+• Tambahkan kolom title, img_url, description, source_url,  dan rss_id pada tabel news, seperti pada gambar dibawah
+  ![Screenshot (121)](https://user-images.githubusercontent.com/61863147/175769952-8003a745-2631-4e58-bf20-589b88bdb0fa.png)
+
+
+• Untuk menjalankan migrasi yang dibuat jalankan perintah diterminal seperti dibawah, lalu cek database
+  ```
+  php artisan migrate
+  ```
+  ![Screenshot (123)](https://user-images.githubusercontent.com/61863147/175769980-d53ddb13-a259-4c09-a243-ad1d4140a076.png)
+
+
+• Buat koneksi  model  ke database  dengan membuat seeder dan controller untuk tabel Rss dan News, dengan perintah
+  ```
+  php artisan make:model Rss –-seed -–controller
+  ```
+  
+  ![Screenshot (125)](https://user-images.githubusercontent.com/61863147/175770042-b8583d3e-a9c2-41a9-aa51-f7b15d19bee8.png)
+
+
+• Edit file Rss.php, RssSeeder.php serta DatabaseSeeder.php seperti pada gambar dibawah
+  ![Screenshot (125)](https://user-images.githubusercontent.com/61863147/175770134-8f66225e-8c17-4d3c-86e9-dac3a5b69e05.png)
+  ![Screenshot (127)](https://user-images.githubusercontent.com/61863147/175770137-2eabb3ae-0bac-40a9-a03f-b06d8ddb58d8.png)   
+  ![Screenshot (128)](https://user-images.githubusercontent.com/61863147/175770138-eab1bea6-c27c-41ba-9dc0-396f15bbab81.png)
+
+  
+• Kemudian cek koneksi dengan perintah
+  ```
+  php artisan db:seed
+  ```
+  ![Screenshot (133)](https://user-images.githubusercontent.com/61863147/175770168-67a785a7-e350-4e9a-8111-52e042cc4887.png)
+
+
+• Edit file News.php, NewsController.php, web.php, serta file migration News seperti pada gambar dibawah
+  ![Screenshot (129)](https://user-images.githubusercontent.com/61863147/175770187-946cee82-1cf7-4d81-98ea-edae3c377398.png)
+  ![Screenshot (137)](https://user-images.githubusercontent.com/61863147/175770219-d8ebdd9e-3c44-4211-bf5f-1855b4a8f43f.png)
+  ![Screenshot (145)](https://user-images.githubusercontent.com/61863147/175770272-81e705c6-54f4-414d-85ff-2ff514b322d4.png)
+  ![Screenshot (138)](https://user-images.githubusercontent.com/61863147/175770296-e1c4724c-71fd-4da5-87be-ec286f7c67d0.png)
+  
+
+• Cek localhost di http://127.0.0.1:8000/aggregrate/1 dan di database phpmyadmin
+![Screenshot (139)](https://user-images.githubusercontent.com/61863147/175770311-f66ff5d9-c441-4879-85b3-f9f9b75ab482.png)
+![Screenshot (140)](https://user-images.githubusercontent.com/61863147/175770316-91437143-d231-4b77-ae7a-1595d6acd969.png)
